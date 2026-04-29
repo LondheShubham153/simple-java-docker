@@ -1,5 +1,5 @@
 # stable official Java runtime base image
-FROM openjdk:17-jdk-alpine
+FROM eclipse-temurin:17-jdk
 
 # metadata
 LABEL maintainer="your-email@example.com"
@@ -17,3 +17,5 @@ RUN javac Main.java
 
 # Run the Java application when the container starts
 CMD ["java", "Main"]
+
+
